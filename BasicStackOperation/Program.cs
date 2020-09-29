@@ -15,9 +15,9 @@ namespace BasicStackOperation
             int numberElementsForPop = input[1];
             int target = input[2];
             int[] elements = Console.ReadLine()
-    .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-    .Select(int.Parse)
-    .ToArray();
+            .Split(' ', StringSplitOptions.RemoveEmptyEntries)
+            .Select(int.Parse)
+            .ToArray();
             Stack<int> stack = new Stack<int>(elements);
             for (int i = 0; i < numberElementsForPop; i++)
             {

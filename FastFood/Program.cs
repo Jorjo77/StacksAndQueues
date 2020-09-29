@@ -10,9 +10,9 @@ namespace FastFood
         {
             int quantityFood = int.Parse(Console.ReadLine());
             int[] orders = Console.ReadLine()
-    .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-    .Select(int.Parse)
-    .ToArray();
+            .Split(' ', StringSplitOptions.RemoveEmptyEntries)
+            .Select(int.Parse)
+            .ToArray();
             Queue<int> queue = new Queue<int>(orders);
             Console.WriteLine(queue.Max());
             while (queue.Count>0)

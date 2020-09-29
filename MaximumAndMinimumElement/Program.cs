@@ -43,9 +43,9 @@ namespace MaximumAndMinimumElement
                 }
 
             }
-            while (stack.Count>0)
+            while (stack.Count > 0)
             {
-                if (stack.Count>1)
+                if (stack.Count > 1)
                 {
                     Console.Write(stack.Pop() + ", ");
                 }
@@ -53,6 +53,7 @@ namespace MaximumAndMinimumElement
                 {
                     Console.Write(stack.Pop());
                 }
+                //Console.Write(string.Join(", ", stack));
             }
         }
     }

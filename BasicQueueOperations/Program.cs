@@ -15,9 +15,9 @@ namespace BasicQueueOperations
             int elementsForDequeue = input[1];
             int target = input[2];
             int[] elements = Console.ReadLine()
-    .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-    .Select(int.Parse)
-    .ToArray();
+            .Split(' ', StringSplitOptions.RemoveEmptyEntries)
+            .Select(int.Parse)
+            .ToArray();
             Queue<int> queue = new Queue<int>(elements);
             for (int i = 0; i < elementsForDequeue; i++)
             {

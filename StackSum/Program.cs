@@ -45,7 +45,7 @@ namespace StackSum
 
                         break;
                     default:
-                        break;
+                        throw new ArgumentException("Unknown action");
                 }
             }
             while (stack.Count>0)

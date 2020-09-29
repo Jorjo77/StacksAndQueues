@@ -10,7 +10,7 @@ namespace SongsQueue
         static void Main(string[] args)
         {
             string[] songs = Console.ReadLine()
-    .Split(", ", StringSplitOptions.RemoveEmptyEntries);
+            .Split(", ", StringSplitOptions.RemoveEmptyEntries);
 
             Queue<string> playList = new Queue<string>(songs);
             string command = Console.ReadLine();
@@ -24,7 +24,7 @@ namespace SongsQueue
                 else if (command.Contains("Add"))
                 {
                     var splittedCommand = command
-.Split("Add ", StringSplitOptions.RemoveEmptyEntries);
+                    .Split("Add ", StringSplitOptions.RemoveEmptyEntries);
                     if (!playList.Contains(splittedCommand[0]))
                     {
                         playList.Enqueue(splittedCommand[0]);
